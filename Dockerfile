@@ -22,4 +22,4 @@ RUN apt-get install -y nodejs
 
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
-CMD composer install && php artisan migrate --force && php artisan db:seed && apache2-foreground && chown www-data:www-data /var/www/html/storage -R
+CMD composer install && php artisan migrate --force && php artisan db:seed && apache2-foreground && chown www-data:www-data /var/www/html/storage -R &&  php artisan storage:link
