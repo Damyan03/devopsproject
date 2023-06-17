@@ -26,11 +26,11 @@
         @csrf
         <div style="display:flex; justify-content: center; align-items: center; flex-direction: column; gap: 10px; margin-top: 100px;">
             <label style="color:white;" for="name">Cat Name</label>
-            <input type="text" name="name" placeholder="Cat Name">
+            <input type="text" name="name" placeholder="Cat Name" required>
             <label style="color:white;" for="color">Cat Color</label>
-            <input type="text" name="color" placeholder="Cat Color">
+            <input type="text" name="color" placeholder="Cat Color" required>
             <label style="color:white;" for="age">Cat Age</label>
-            <input type="number" name="age" placeholder="Cat Age">
+            <input type="number" name="age" placeholder="Cat Age" required>
             <button style="color:white; " type="submit">MAKE ENTRY</button>
             <a style="color:white;" href="/cats"><h1>BACK</h1></a>
         </div>

@@ -27,11 +27,11 @@
         @method('PUT')
         <div style="display:flex; justify-content: center; align-items: center; flex-direction: column; gap: 10px; margin-top: 100px;">
             <label style="color:white;" for="name">Cat Name</label>
-            <input type="text" name="name" placeholder="Cat Name" value="{{$cat->name}}">
+            <input type="text" name="name" placeholder="Cat Name" value="{{$cat->name}}" required>
             <label style="color:white;" for="color">Cat Color</label>
-            <input type="text" name="color" placeholder="Cat Color" value="{{$cat->color}}">
+            <input type="text" name="color" placeholder="Cat Color" value="{{$cat->color}}" required>
             <label style="color:white;" for="age">Cat Age</label>
-            <input type="number" name="age" placeholder="Cat Age" value="{{$cat->age}}">
+            <input type="number" name="age" placeholder="Cat Age" value="{{$cat->age}}" required>
             <button style="color:white; " type="submit">Update</button>
             <a style="color:white;" href="/cats"><h1>BACK</h1></a>
         </div>
