@@ -21,7 +21,7 @@
         }
     </style>
 </head>
-<body class="antialiased dark:bg-gray-900">
+<body class="antialiased" style="background: #111827">
     <div style="display:flex; justify-content: center; align-items: center; flex-direction: column; gap: 10px;">
         <h1 style="color: white; font-size: 100px; margin:auto">{{$cat->name}}</h1>
         <h3>Cat ID: {{$cat->id}}</h3>

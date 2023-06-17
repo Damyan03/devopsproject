@@ -13,10 +13,13 @@ return new class extends Migration
     {
         Schema::create('cats', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('user_id')->nullable();
             $table->text('name');
             $table->text('color');
             $table->integer('age');
             $table->timestamps();
+
+            $table->foreign('user_id')->references('id')->on('users');
         });
     }
 

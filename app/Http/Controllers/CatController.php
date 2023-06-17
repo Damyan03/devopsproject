@@ -31,6 +31,7 @@ class CatController extends Controller
     {
         $cat = new \App\Models\Cat();
 
+        $cat->user_id = auth()->user()->id;
         $cat->name = $request->input('name');
         $cat->color = $request->input('color');
         $cat->age = $request->input('age');

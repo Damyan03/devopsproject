@@ -21,7 +21,7 @@
         }
     </style>
 </head>
-<body class="antialiased dark:bg-gray-900">
+<body class="antialiased" style="background: #111827">
     <form action="{{route('cats.store')}}" method="POST">
         @csrf
         <div style="display:flex; justify-content: center; align-items: center; flex-direction: column; gap: 10px; margin-top: 100px;">

@@ -21,7 +21,7 @@
         }
     </style>
 </head>
-<body class="antialiased dark:bg-gray-900">
+<body class="antialiased" style="background: #111827">
     <form action="{{route('cats.update', $cat->id)}}" method="POST">
         @csrf
         @method('PUT')
